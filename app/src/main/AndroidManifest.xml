@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?><!-- suppress ALL -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.studyapp.studytracker">
 
@@ -19,6 +19,18 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".StudyModeActivity"
+            android:label="@string/title_activity_study_mode"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".AddSubject"
+            android:label="@string/title_activity_add_subject"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".SubjectListActivity"
+            android:label="@string/title_activity_subject_list"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>

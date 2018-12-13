@@ -6,4 +6,7 @@
     <string name="nav_header_subtitle">Build by Sara</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Student Activity</string>
+    <string name="title_activity_study_mode">StudyModeActivity</string>
+    <string name="title_activity_add_subject">AddSubject</string>
+    <string name="title_activity_subject_list">SubjectListActivity</string>
 </resources>
