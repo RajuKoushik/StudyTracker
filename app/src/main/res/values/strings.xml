@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Study Tracker</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">The Study Tracker App</string>
+    <string name="nav_header_subtitle">Build by Sara</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Student Activity</string>
+</resources>
