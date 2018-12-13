@@ -1,6 +1,5 @@
 package com.example.studyapp.studytracker;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -8,12 +7,12 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 
-public class StudyModeActivity extends AppCompatActivity {
+public class WhatStudyActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_study_mode);
+        setContentView(R.layout.activity_what_study);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
@@ -27,18 +26,4 @@ public class StudyModeActivity extends AppCompatActivity {
         });
     }
 
-    public void AddSubject(View view) {
-        Intent intent = new Intent(StudyModeActivity.this, AddSubject.class);
-        startActivity(intent);
-    }
-
-    public void but_view_subjects(View view) {
-        Intent intent = new Intent(StudyModeActivity.this, SubjectListActivity.class);
-        startActivity(intent);
-    }
-
-    public void what_studying(View view) {
-        Intent intent = new Intent(StudyModeActivity.this, SubjectListActivity.class);
-        startActivity(intent);
-    }
 }

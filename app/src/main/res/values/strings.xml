@@ -9,4 +9,5 @@
     <string name="title_activity_study_mode">StudyModeActivity</string>
     <string name="title_activity_add_subject">AddSubject</string>
     <string name="title_activity_subject_list">SubjectListActivity</string>
+    <string name="title_activity_what_study">WhatStudyActivity</string>
 </resources>
