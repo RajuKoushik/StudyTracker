@@ -23,17 +23,52 @@
                 android:id="@+id/tv_title"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="16sp"
+                android:textSize="22sp"
                 tools:text="Title"
                 />
             <TextView
                 android:id="@+id/item_text"
                 android:layout_gravity="center"
                 tools:text="Content"
+                android:textSize="22sp"
+
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ellipsize="end"
                 android:maxLines="2"/>
+
+            <TextView
+                android:id="@+id/item_hours"
+                tools:text="Hours"
+                android:textSize="22sp"
+
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                />
+
+            <TextView
+                android:id="@+id/item_topic"
+                tools:text="Date"
+                android:textSize="22sp"
+
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                />
+
+            <TextView
+                android:id="@+id/item_date"
+                tools:text="Location"
+                android:textSize="22sp"
+
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                />
         </LinearLayout>
 
     </android.support.v7.widget.CardView>

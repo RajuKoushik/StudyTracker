@@ -19,9 +19,6 @@ import android.widget.Toast;
 
 import java.util.List;
 
-/**
- * Created by Pavneet_Singh on 12/20/17.
- */
 
 public class SubjectAdapter extends RecyclerView.Adapter<SubjectAdapter.BeanHolder> {
 
@@ -47,8 +44,13 @@ public class SubjectAdapter extends RecyclerView.Adapter<SubjectAdapter.BeanHold
     @Override
     public void onBindViewHolder(BeanHolder holder, int position) {
         Log.e("bind", "onBindViewHolder: "+ list.get(position));
-        holder.textViewTitle.setText(list.get(position).getSubjectName());
-        holder.textViewContent.setText("random");
+        holder.textViewTitle.setText("Subject studied: "+list.get(position).getSubjectName());
+        holder.textViewContent.setText("Location: "+list.get(position).getSubjectLocation());
+        holder.textViewHours.setText("Hours Studied: "+list.get(position).getSubjectHours());
+        holder.textViewTopic.setText("Topic Studied: "+list.get(position).getSubjectTopic());
+        holder.textViewDate.setText("Date Studied: "+list.get(position).getSubjectDate());
+
+
     }
 
     @Override
@@ -60,20 +62,32 @@ public class SubjectAdapter extends RecyclerView.Adapter<SubjectAdapter.BeanHold
 
         TextView textViewContent;
         TextView textViewTitle;
+        TextView textViewHours;
+        TextView textViewTopic;
+        TextView textViewDate;
+
         public BeanHolder(View itemView) {
             super(itemView);
             itemView.setOnClickListener(this);
             textViewContent = itemView.findViewById(R.id.item_text);
             textViewTitle = itemView.findViewById(R.id.tv_title);
+            textViewHours = itemView.findViewById(R.id.item_hours);
+            textViewTopic = itemView.findViewById(R.id.item_topic);
+            textViewDate = itemView.findViewById(R.id.item_date);
+
+
         }
 
         @Override
         public void onClick(View view) {
             onNoteItemClick.onNoteClick(getAdapterPosition());
+
+
         }
     }
 
     public interface OnNoteItemClick{
         void onNoteClick(int pos);
+
     }
 }

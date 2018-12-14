@@ -10,6 +10,7 @@ import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.lang.ref.WeakReference;
 import java.util.List;
@@ -55,6 +56,9 @@ public class SubjectListActivity extends AppCompatActivity implements SubjectAda
 
     @Override
     public void onNoteClick(int pos) {
+
+        Toast.makeText(SubjectListActivity.this, pos+" Position",
+                Toast.LENGTH_LONG).show();
 
     }
 

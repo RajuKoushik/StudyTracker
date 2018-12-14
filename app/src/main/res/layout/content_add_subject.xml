@@ -15,7 +15,7 @@
         android:layout_marginStart="60dp"
         android:layout_marginTop="55dp"
         android:autoSizeTextType="uniform"
-        android:text="Let's add a subject"
+        android:text="What did you study ?"
         android:textSize="30dp"
 
         app:layout_constraintStart_toStartOf="parent"
@@ -25,21 +25,79 @@
         android:id="@+id/subject_name"
         android:layout_width="324dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="149dp"
+        android:layout_marginTop="120dp"
+        android:hint="Subject"
+        android:textSize="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <EditText
+        android:id="@+id/subject_location"
+        android:layout_width="324dp"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="16dp"
+        android:hint="Location"
         android:textSize="25dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/subject_name" />
+
+    <EditText
+        android:id="@+id/subject_hours"
+
+        android:layout_width="324dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="33dp"
+        android:hint="Hours Studied"
+        android:textSize="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/subject_location" />
+
+    <EditText
+        android:id="@+id/subject_topic"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="43dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="43dp"
+        android:hint="Topic"
+        android:textSize="25dp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/subject_hours" />
+
+    <EditText
+        android:id="@+id/subject_date"
+        android:layout_width="324dp"
+        android:layout_height="wrap_content"
+        android:hint="Date"
+        android:textSize="25dp"
+
+        android:layout_marginTop="21dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/subject_topic" />
+
 
     <Button
         android:id="@+id/but_save"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="25dp"
-        android:text="ADD THE SUBJECT"
+        android:layout_marginTop="304dp"
+        android:layout_marginBottom="76dp"
+        android:text="ADD THE DATA"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/subject_name" />
+        app:layout_constraintTop_toBottomOf="@+id/subject_hours" />
 
 
 </android.support.constraint.ConstraintLayout>

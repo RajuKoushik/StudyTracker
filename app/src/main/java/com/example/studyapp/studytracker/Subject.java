@@ -20,9 +20,61 @@ public class Subject {
     @ColumnInfo(name = "subject_name")
     private String subjectName;
 
-    public Subject(String subjectName) {
+    @ColumnInfo(name = "subject_location")
+    private String subjectLocation;
+
+    @ColumnInfo(name = "subject_hours")
+    private String subjectHours;
+
+    @ColumnInfo(name = "subject_topic")
+    private String subjectTopic;
+
+    @ColumnInfo(name = "subject_date")
+    private String subjectDate;
+
+
+    public Subject(String subjectName,  String subjectLocation,String subjectHours, String subjectTopic, String subjectDate) {
         this.subjectName = subjectName;
+        this.subjectHours = subjectHours;
+        this.subjectLocation = subjectLocation;
+        this.subjectTopic = subjectTopic;
+        this.subjectDate = subjectDate;
     }
+
+
+    public String getSubjectDate() {
+        return subjectDate;
+    }
+
+    public String getSubjectTopic() {
+        return subjectTopic;
+    }
+
+    public void setSubjectDate(String subjectDate) {
+        this.subjectDate = subjectDate;
+    }
+
+    public void setSubjectTopic(String subjectTopic) {
+        this.subjectTopic = subjectTopic;
+    }
+
+    public String getSubjectHours() {
+        return subjectHours;
+    }
+
+    public String getSubjectLocation() {
+        return subjectLocation;
+    }
+
+    public void setSubjectHours(String subjectHours) {
+        this.subjectHours = subjectHours;
+    }
+
+    public void setSubjectLocation(String subjectLocation) {
+        this.subjectLocation = subjectLocation;
+    }
+
+
 
     public int getUid() {
         return uid;
@@ -65,6 +117,12 @@ public class Subject {
         return "Subject{" +
                 "uid=" + uid +
                 ", subject='" + subjectName + '\'' +
+                ", subject_location='" + subjectLocation + '\'' +
+                ", subject_hours='" + subjectHours + '\'' +
+                ", subject_topic='" + subjectTopic + '\'' +
+                ", subject_date='" + subjectTopic + '\'' +
+
+
                 '}';
     }
 

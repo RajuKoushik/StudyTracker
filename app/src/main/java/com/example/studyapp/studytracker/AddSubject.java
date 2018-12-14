@@ -18,6 +18,12 @@ import java.lang.ref.WeakReference;
 public class AddSubject extends AppCompatActivity {
 
     private EditText et_subject;
+    private EditText et_location;
+    private EditText et_hours;
+    private EditText et_topic;
+    private EditText et_date;
+
+
     private SubjectDatabase subjectDatabase;
     private Subject subject;
     @Override
@@ -28,6 +34,10 @@ public class AddSubject extends AppCompatActivity {
         setSupportActionBar(toolbar);
 
         et_subject = (EditText)findViewById(R.id.subject_name);
+        et_location = (EditText)findViewById(R.id.subject_location);
+        et_hours = (EditText)findViewById(R.id.subject_hours);
+        et_topic = (EditText)findViewById(R.id.subject_topic);
+        et_date = (EditText)findViewById(R.id.subject_date);
         subjectDatabase = SubjectDatabase.getInstance(AddSubject.this);
         Button button = findViewById(R.id.but_save);
 
@@ -35,7 +45,9 @@ public class AddSubject extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 // fetch data and create note object
-                subject = new Subject(et_subject.getText().toString());
+                subject = new Subject(et_subject.getText().toString(),et_location.getText().toString(),et_hours.getText().toString(),et_topic.getText().toString(),et_date.getText().toString());
+
+
 
                 // create worker thread to insert data into database
                 new InsertTask(AddSubject.this,subject).execute();

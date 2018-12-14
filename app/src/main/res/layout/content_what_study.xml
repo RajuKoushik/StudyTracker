@@ -8,4 +8,12 @@
     tools:context=".WhatStudyActivity"
     tools:showIn="@layout/activity_what_study">
 
+    <Spinner
+        android:id="@+id/spinner_drop"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+
+    </Spinner>
+
 </android.support.constraint.ConstraintLayout>

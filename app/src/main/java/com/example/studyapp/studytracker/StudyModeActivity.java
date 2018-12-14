@@ -37,8 +37,5 @@ public class StudyModeActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-    public void what_studying(View view) {
-        Intent intent = new Intent(StudyModeActivity.this, SubjectListActivity.class);
-        startActivity(intent);
-    }
+
 }
